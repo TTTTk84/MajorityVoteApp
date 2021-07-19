@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IndexViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "多数決一覧"
     }
 
 

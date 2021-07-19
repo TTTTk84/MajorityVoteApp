@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		541B59B326A3E6F300724C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B226A3E6F300724C28 /* AppDelegate.swift */; };
 		541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B426A3E6F300724C28 /* SceneDelegate.swift */; };
-		541B59B726A3E6F300724C28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B626A3E6F300724C28 /* ViewController.swift */; };
+		541B59B726A3E6F300724C28 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B626A3E6F300724C28 /* IndexViewController.swift */; };
 		541B59BA26A3E6F300724C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541B59B826A3E6F300724C28 /* Main.storyboard */; };
 		541B59BC26A3E6F600724C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541B59BB26A3E6F600724C28 /* Assets.xcassets */; };
 		541B59BF26A3E6F600724C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541B59BD26A3E6F600724C28 /* LaunchScreen.storyboard */; };
 		541B59CA26A3E6F600724C28 /* MajorityVoteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59C926A3E6F600724C28 /* MajorityVoteAppTests.swift */; };
 		541B59D526A3E6F700724C28 /* MajorityVoteAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59D426A3E6F700724C28 /* MajorityVoteAppUITests.swift */; };
+		541B59E626A3F58A00724C28 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59E526A3F58A00724C28 /* ShowViewController.swift */; };
+		542E4C2326A51F9C00F3DBC7 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2226A51F9C00F3DBC7 /* CounterViewController.swift */; };
+		542E4C2526A51FAB00F3DBC7 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2426A51FAB00F3DBC7 /* GraphViewController.swift */; };
+		80402CD3D2C1DC1B92D43663 /* Pods_MajorityVoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajorityVoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541B59AF26A3E6F300724C28 /* MajorityVoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajorityVoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		541B59B226A3E6F300724C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		541B59B426A3E6F300724C28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		541B59B626A3E6F300724C28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		541B59B626A3E6F300724C28 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		541B59B926A3E6F300724C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		541B59BB26A3E6F600724C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541B59BE26A3E6F600724C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		541B59D026A3E6F700724C28 /* MajorityVoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajorityVoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		541B59D426A3E6F700724C28 /* MajorityVoteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityVoteAppUITests.swift; sourceTree = "<group>"; };
 		541B59D626A3E6F700724C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541B59E526A3F58A00724C28 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		542E4C2226A51F9C00F3DBC7 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		542E4C2426A51FAB00F3DBC7 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.debug.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.release.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80402CD3D2C1DC1B92D43663 /* Pods_MajorityVoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				541B59C826A3E6F600724C28 /* MajorityVoteAppTests */,
 				541B59D326A3E6F700724C28 /* MajorityVoteAppUITests */,
 				541B59B026A3E6F300724C28 /* Products */,
+				FB99E9ED2ED6D3BD9BA935AC /* Pods */,
+				76F525B8E658B462CFF43849 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +112,11 @@
 		541B59B126A3E6F300724C28 /* MajorityVoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				541B59E426A3F45900724C28 /* Models */,
+				541B59E226A3F43500724C28 /* Views */,
+				541B59E326A3F44100724C28 /* Controllers */,
 				541B59B226A3E6F300724C28 /* AppDelegate.swift */,
 				541B59B426A3E6F300724C28 /* SceneDelegate.swift */,
-				541B59B626A3E6F300724C28 /* ViewController.swift */,
 				541B59B826A3E6F300724C28 /* Main.storyboard */,
 				541B59BB26A3E6F600724C28 /* Assets.xcassets */,
 				541B59BD26A3E6F600724C28 /* LaunchScreen.storyboard */,
@@ -128,6 +143,48 @@
 			path = MajorityVoteAppUITests;
 			sourceTree = "<group>";
 		};
+		541B59E226A3F43500724C28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				541B59B626A3E6F300724C28 /* IndexViewController.swift */,
+				541B59E526A3F58A00724C28 /* ShowViewController.swift */,
+				542E4C2226A51F9C00F3DBC7 /* CounterViewController.swift */,
+				542E4C2426A51FAB00F3DBC7 /* GraphViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		541B59E326A3F44100724C28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		541B59E426A3F45900724C28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76F525B8E658B462CFF43849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB99E9ED2ED6D3BD9BA935AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */,
+				D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 541B59D926A3E6F700724C28 /* Build configuration list for PBXNativeTarget "MajorityVoteApp" */;
 			buildPhases = (
+				1EA5A1E771F49DE5418D5E52 /* [CP] Check Pods Manifest.lock */,
 				541B59AB26A3E6F300724C28 /* Sources */,
 				541B59AC26A3E6F300724C28 /* Frameworks */,
 				541B59AD26A3E6F300724C28 /* Resources */,
+				E1D0FBE94EFA082AB6FBCB77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +312,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EA5A1E771F49DE5418D5E52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajorityVoteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D0FBE94EFA082AB6FBCB77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		541B59AB26A3E6F300724C28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541B59B726A3E6F300724C28 /* ViewController.swift in Sources */,
+				542E4C2326A51F9C00F3DBC7 /* CounterViewController.swift in Sources */,
+				541B59B726A3E6F300724C28 /* IndexViewController.swift in Sources */,
 				541B59B326A3E6F300724C28 /* AppDelegate.swift in Sources */,
+				542E4C2526A51FAB00F3DBC7 /* GraphViewController.swift in Sources */,
 				541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */,
+				541B59E626A3F58A00724C28 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +537,7 @@
 		};
 		541B59DA26A3E6F700724C28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +557,7 @@
 		};
 		541B59DB26A3E6F700724C28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
