@@ -3,5 +3,6 @@ use_frameworks!
 
 target 'MajorityVoteApp' do
 pod "XLPagerTabStrip"
+pod "RealmSwift"
 end
 
