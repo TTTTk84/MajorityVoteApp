@@ -41,8 +41,14 @@ class VoteIndexModel {
         voteCategories = dataStore.fetchAll()
     }
     
-    func updateVoteCategory(category: VoteCategory) {
-        dataStore.update(category)
+    func updateVoteCategory(category: VoteCategory, name: String) {
+        dataStore.update(category: category, name: name)
         voteCategories = dataStore.fetchAll()
     }
+    
+    func deleteVoteCategory(category: VoteCategory) {
+        dataStore.delete(category: category)
+        voteCategories = dataStore.fetchAll()
+    }
+
 }

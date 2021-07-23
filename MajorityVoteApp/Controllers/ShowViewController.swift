@@ -13,6 +13,9 @@ class ShowViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "きのこ派たけのこ派"
+        
+        
+        
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

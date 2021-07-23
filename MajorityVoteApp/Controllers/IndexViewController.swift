@@ -29,10 +29,14 @@ class IndexViewController: UIViewController {
     
     @IBAction func tempAction(_ sender: Any) {
         
+//        let category = tableDataList.last!
+//        print(category)
+//        //category.name = "hogehoge"
+//        model.updateVoteCategory(category: category, name: "hogehoge")
+        
         let category = tableDataList.last!
-        print(category)
-        //category.name = "hogehoge"
-        model.updateVoteCategory(category: category)
+        model.deleteVoteCategory(category: category)
+        //model.addVoteCategory(category: VoteCategory(name: "temp category"))
     }
     
     func reloadTableView(categories: [VoteCategory]) {
