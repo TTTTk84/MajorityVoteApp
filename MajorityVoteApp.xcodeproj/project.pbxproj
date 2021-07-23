@@ -20,6 +20,10 @@
 		542E4C2526A51FAB00F3DBC7 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2426A51FAB00F3DBC7 /* GraphViewController.swift */; };
 		542E4C2726A70FEF00F3DBC7 /* VoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2626A70FEF00F3DBC7 /* VoteCategory.swift */; };
 		542E4C2926A70FFD00F3DBC7 /* VoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2826A70FFD00F3DBC7 /* VoteItem.swift */; };
+		542E4C2B26A7176B00F3DBC7 /* VoteIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2A26A7176B00F3DBC7 /* VoteIndexModel.swift */; };
+		542E4C2D26A7177F00F3DBC7 /* VoteShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2C26A7177F00F3DBC7 /* VoteShowModel.swift */; };
+		542E4C2F26A717C900F3DBC7 /* VoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2E26A717C900F3DBC7 /* VoteDataStore.swift */; };
+		54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E4F26AA54FF0012B853 /* DataConnection.swift */; };
 		80402CD3D2C1DC1B92D43663 /* Pods_MajorityVoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		542E4C2426A51FAB00F3DBC7 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		542E4C2626A70FEF00F3DBC7 /* VoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCategory.swift; sourceTree = "<group>"; };
 		542E4C2826A70FFD00F3DBC7 /* VoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteItem.swift; sourceTree = "<group>"; };
+		542E4C2A26A7176B00F3DBC7 /* VoteIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteIndexModel.swift; sourceTree = "<group>"; };
+		542E4C2C26A7177F00F3DBC7 /* VoteShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteShowModel.swift; sourceTree = "<group>"; };
+		542E4C2E26A717C900F3DBC7 /* VoteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDataStore.swift; sourceTree = "<group>"; };
+		54E93E4F26AA54FF0012B853 /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
 		778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.debug.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.release.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +178,10 @@
 			children = (
 				542E4C2626A70FEF00F3DBC7 /* VoteCategory.swift */,
 				542E4C2826A70FFD00F3DBC7 /* VoteItem.swift */,
+				542E4C2A26A7176B00F3DBC7 /* VoteIndexModel.swift */,
+				542E4C2C26A7177F00F3DBC7 /* VoteShowModel.swift */,
+				542E4C2E26A717C900F3DBC7 /* VoteDataStore.swift */,
+				54E93E4F26AA54FF0012B853 /* DataConnection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542E4C2D26A7177F00F3DBC7 /* VoteShowModel.swift in Sources */,
+				54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */,
 				542E4C2726A70FEF00F3DBC7 /* VoteCategory.swift in Sources */,
 				542E4C2326A51F9C00F3DBC7 /* CounterViewController.swift in Sources */,
 				541B59B726A3E6F300724C28 /* IndexViewController.swift in Sources */,
@@ -373,6 +387,8 @@
 				541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */,
 				542E4C2926A70FFD00F3DBC7 /* VoteItem.swift in Sources */,
 				541B59E626A3F58A00724C28 /* ShowViewController.swift in Sources */,
+				542E4C2F26A717C900F3DBC7 /* VoteDataStore.swift in Sources */,
+				542E4C2B26A7176B00F3DBC7 /* VoteIndexModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
