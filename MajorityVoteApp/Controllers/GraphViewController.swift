@@ -10,15 +10,24 @@ import XLPagerTabStrip
 
 class GraphViewController: UIViewController, IndicatorInfoProvider {
     
-    //ここがボタンのタイトルに利用されます
     var itemInfo: IndicatorInfo = "グラフ"
+    var model: VoteShowModel!
+    var voteCategory: VoteCategory!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        voteCategory = model.voteCategory
+        
     }
     
     //必須
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return itemInfo
+    }
+    
+    
+    func reloadView(voteCategory: VoteCategory) {
+        print("update GraphView: \(voteCategory)")
+        self.voteCategory = voteCategory
     }
 }

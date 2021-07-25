@@ -12,6 +12,7 @@ class VoteCategory: Object {
     @objc dynamic var id = NSUUID().uuidString
     @objc dynamic var createAt = Date()
     @objc dynamic var name = ""
+    let items = List<VoteItem>()
     
     convenience init(name: String) {
         self.init()
@@ -19,3 +20,4 @@ class VoteCategory: Object {
     }
     
 }
+
