@@ -10,20 +10,30 @@ import XLPagerTabStrip
 
 
 class ShowViewController: ButtonBarPagerTabStripViewController {
+    
+    var counterView: CounterViewController!
+    var graphView: GraphViewController!
+    var voteCategory: VoteCategory!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "きのこ派たけのこ派"
-        
-        
-        
+        self.navigationItem.title = voteCategory.name
+    }
+    
+    func setViewController(counterView: CounterViewController,
+                           graphView: GraphViewController) {
+        self.counterView = counterView
+        self.graphView = graphView
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        //管理されるViewControllerを返す処理
-        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Counter")
-        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Graph")
-        let childViewControllers:[UIViewController] = [firstVC, secondVC]
+        let childViewControllers:[UIViewController] = [counterView, graphView]
         return childViewControllers
+    }
+    
+    func reloadViews(voteCategory: VoteCategory) {
+        counterView.reloadView(voteCategory: voteCategory)
+        graphView.reloadView(voteCategory: voteCategory)
     }
     
 }

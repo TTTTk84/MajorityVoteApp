@@ -12,13 +12,14 @@ class VoteIndexModel {
     private var realm: Realm!
     private var token: NotificationToken!
     
-    var voteCategories: Results<VoteCategory>!
+    var voteCategoriesRealm: Results<VoteCategory>!
+    var voteCategories: [VoteCategory]!
     private let dataStore: VoteCategoryDataStore
     private let view: IndexViewController
     
-    
     init(dataStore: VoteCategoryDataStore, view: IndexViewController) {
-        self.voteCategories = dataStore.fetchAll()
+        self.voteCategoriesRealm = dataStore.fetchAll()
+        self.voteCategories = Array(voteCategoriesRealm)
         self.dataStore = dataStore
         self.view = view
         self.realm = AppDelegate.database.getConnection()
@@ -27,28 +28,25 @@ class VoteIndexModel {
     }
     
     func voteNotification() {
-        token = voteCategories.observe { _ in
-            self.view.reloadTableView(categories: self.getArrayCategories())
+        token = voteCategoriesRealm.observe { _ in
+            self.voteCategories = Array(self.voteCategoriesRealm)
+            self.view.reloadTableView(categories: self.voteCategories)
         }
-    }
-    
-    func getArrayCategories() -> [VoteCategory] {
-        return Array(voteCategories)
     }
     
     func addVoteCategory(category: VoteCategory) {
         dataStore.add(category)
-        voteCategories = dataStore.fetchAll()
+        voteCategoriesRealm = dataStore.fetchAll()
     }
     
     func updateVoteCategory(category: VoteCategory, name: String) {
         dataStore.update(category: category, name: name)
-        voteCategories = dataStore.fetchAll()
+        voteCategoriesRealm = dataStore.fetchAll()
     }
     
     func deleteVoteCategory(category: VoteCategory) {
         dataStore.delete(category: category)
-        voteCategories = dataStore.fetchAll()
+        voteCategoriesRealm = dataStore.fetchAll()
     }
 
 }
