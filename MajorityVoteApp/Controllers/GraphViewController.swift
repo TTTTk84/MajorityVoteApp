@@ -27,7 +27,7 @@ class GraphViewController: UIViewController, IndicatorInfoProvider {
     
     
     func reloadView(voteCategory: VoteCategory) {
-        print("update GraphView: \(voteCategory)")
+        print("update GraphView")
         self.voteCategory = voteCategory
     }
 }
