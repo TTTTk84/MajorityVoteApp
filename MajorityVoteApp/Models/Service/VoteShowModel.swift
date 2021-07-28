@@ -14,7 +14,7 @@ class VoteShowModel {
     private var token: NotificationToken!
     
     var voteCategoryRealm: Results<VoteCategory>!
-    var voteCategory: VoteCategory!
+    var voteCategory: VoteCategory?
     private let dataStore: VoteItemDataStore
     private let view: ShowViewController
     
@@ -33,8 +33,12 @@ class VoteShowModel {
     func voteNotification() {
         token = voteCategoryRealm.observe { _ in
             self.voteCategory = self.voteCategoryRealm.last
-            self.view.reloadViews(voteCategory: self.voteCategory)
+            self.view.reloadViews(voteCategory: self.voteCategory!)
         }
+    }
+    
+    func getVoteItems() -> [VoteItem] {
+        return Array(voteCategory!.items)
     }
 
     func addVoteItem(item: VoteItem) {

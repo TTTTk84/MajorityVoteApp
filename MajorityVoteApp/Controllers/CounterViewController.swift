@@ -20,7 +20,8 @@ class CounterViewController: UIViewController, IndicatorInfoProvider {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableDataList = Array(model.voteCategory.items)
+        
+        tableDataList = model.getVoteItems()
         
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         tableView.delegate = self
@@ -58,21 +59,7 @@ extension CounterViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let touchCategory = tableDataList[indexPath.section]
-        
-        let showView = self.storyboard?.instantiateViewController(withIdentifier: "ShowViewController") as! ShowViewController
-        let model = VoteShowModel(dataStore: VoteItemDataStore(category: touchCategory), view: showView, voteCategory: touchCategory)
-        
-        let counterView = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Counter") as! CounterViewController)
-        let graphView = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Graph") as! GraphViewController)
-        
-        showView.voteCategory = touchCategory
-        counterView.model = model
-        graphView.model = model
-        
-        showView.setViewController(counterView: counterView, graphView: graphView)
-        
-        self.navigationController?.pushViewController(showView, animated: true)
+        print("selected: \(tableDataList[indexPath.section])")
     }
     
 }
