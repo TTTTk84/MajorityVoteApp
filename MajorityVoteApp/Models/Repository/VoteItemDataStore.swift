@@ -8,6 +8,11 @@
 import Foundation
 import RealmSwift
 
+enum countStatus {
+    case plus
+    case minus
+}
+
 class VoteItemDataStore {
     
     private var realm: Realm!
@@ -37,10 +42,17 @@ class VoteItemDataStore {
         }
     }
     
-    func updateCount(item: VoteItem) {
+    func updateCount(item: VoteItem,status: countStatus) {
         let updateItem = voteCategory.items.filter("id == %@", item.id).first!
+        
+        
         try! realm.write {
-            updateItem.count += 1
+            switch status {
+            case .plus:
+                updateItem.count += 1
+            case .minus:
+                updateItem.count -= 1
+            }
         }
     }
 

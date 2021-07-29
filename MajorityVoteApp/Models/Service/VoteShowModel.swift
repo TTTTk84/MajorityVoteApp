@@ -51,8 +51,8 @@ class VoteShowModel {
         voteCategoryRealm = dataStore.fetchItems()
     }
     
-    func updateCountVoteItem(item: VoteItem) {
-        dataStore.updateCount(item: item)
+    func updateCountVoteItem(item: VoteItem, status: countStatus) {
+        dataStore.updateCount(item: item, status: status)
         voteCategoryRealm = dataStore.fetchItems()
     }
     

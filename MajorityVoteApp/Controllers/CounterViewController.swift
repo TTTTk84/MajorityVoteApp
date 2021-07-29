@@ -14,7 +14,7 @@ class CounterViewController: UIViewController, IndicatorInfoProvider {
     var model: VoteShowModel!
     private var tableDataList: [VoteItem]!
     let cellIdentifier = "ShowCellView"
-
+    
     @IBOutlet weak var tableView: UITableView!
     //var voteCategory: VoteCategory!
     
@@ -36,6 +36,7 @@ class CounterViewController: UIViewController, IndicatorInfoProvider {
     func reloadView(voteCategory: VoteCategory) {
         print("update CounterView")
         self.tableDataList = Array(voteCategory.items)
+        tableView.reloadData()
     }
     
 }
@@ -53,7 +54,7 @@ extension CounterViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ShowCellView
         
         let voteItem = tableDataList[indexPath.section]
-        cell.label.text = voteItem.name
+        cell.setValue(voteItem: voteItem,delegate: self)
         
         return cell
     }
@@ -82,3 +83,23 @@ extension CounterViewController: UITableViewDelegate {
     }
 }
 
+extension CounterViewController: ShowCellViewDelegate {
+    func minusButtonChecked(cell: ShowCellView) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            return
+        }
+        let voteItem = tableDataList[indexPath.section]
+        model.updateCountVoteItem(item: voteItem,status: .minus)
+        
+    }
+    
+    func plusButtonChecked(cell: ShowCellView) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            return
+        }
+        let voteItem = tableDataList[indexPath.section]
+        model.updateCountVoteItem(item: voteItem,status: .plus)
+        
+    }
+    
+}

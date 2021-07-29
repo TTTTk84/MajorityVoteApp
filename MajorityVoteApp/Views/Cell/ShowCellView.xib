@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,16 +19,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rk-5n-NfB">
-                                <rect key="frame" x="186" y="32" width="42" height="21"/>
+                                <rect key="frame" x="30" y="30" width="150" height="25"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AIq-Le-0Ve"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUg-ro-SiB">
+                                <rect key="frame" x="344" y="17.5" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bic-ge-IDn"/>
+                                    <constraint firstAttribute="width" constant="50" id="kBS-yM-Eng"/>
+                                </constraints>
+                                <state key="normal" title="＋"/>
+                                <connections>
+                                    <action selector="changePlusButton:" destination="OgG-iC-8JW" eventType="touchUpInside" id="cRw-Bk-Yof"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-m1-RXU">
+                                <rect key="frame" x="284" y="17.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2cd-Q9-Tmz"/>
+                                    <constraint firstAttribute="height" constant="50" id="GIm-MD-dAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-Di-5vM">
+                                <rect key="frame" x="224" y="17.5" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="H3b-BW-zUQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Sfh-hx-Cno"/>
+                                </constraints>
+                                <state key="normal" title="ー"/>
+                                <connections>
+                                    <action selector="changeMinusButton:" destination="OgG-iC-8JW" eventType="touchUpInside" id="wcG-nJ-SmG"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="8rk-5n-NfB" firstAttribute="centerX" secondItem="VHc-vF-Wu4" secondAttribute="centerX" id="4hc-Ei-9uE"/>
-                            <constraint firstItem="8rk-5n-NfB" firstAttribute="centerY" secondItem="VHc-vF-Wu4" secondAttribute="centerY" id="zKu-RS-3Y5"/>
+                            <constraint firstItem="ztm-m1-RXU" firstAttribute="centerY" secondItem="ZZu-Di-5vM" secondAttribute="centerY" id="4mI-N8-88C"/>
+                            <constraint firstItem="ZZu-Di-5vM" firstAttribute="centerY" secondItem="8rk-5n-NfB" secondAttribute="centerY" id="dTz-Ou-0Sp"/>
+                            <constraint firstItem="8rk-5n-NfB" firstAttribute="leading" secondItem="VHc-vF-Wu4" secondAttribute="leading" constant="30" id="f8k-Si-Mww"/>
+                            <constraint firstItem="fUg-ro-SiB" firstAttribute="leading" secondItem="ztm-m1-RXU" secondAttribute="trailing" constant="10" id="iUc-75-cq3"/>
+                            <constraint firstItem="ztm-m1-RXU" firstAttribute="leading" secondItem="ZZu-Di-5vM" secondAttribute="trailing" constant="10" id="jDg-KJ-i1h"/>
+                            <constraint firstAttribute="trailing" secondItem="fUg-ro-SiB" secondAttribute="trailing" constant="20" id="mzt-0l-PU7"/>
+                            <constraint firstItem="8rk-5n-NfB" firstAttribute="top" secondItem="VHc-vF-Wu4" secondAttribute="top" constant="30" id="oHS-z0-bDI"/>
+                            <constraint firstItem="fUg-ro-SiB" firstAttribute="centerY" secondItem="ztm-m1-RXU" secondAttribute="centerY" id="tCS-ms-gx9"/>
+                            <constraint firstAttribute="bottom" secondItem="8rk-5n-NfB" secondAttribute="bottom" constant="30" id="xBs-he-NCF"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -41,14 +84,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="countLabel" destination="ztm-m1-RXU" id="Ppp-9I-65D"/>
                 <outlet property="label" destination="8rk-5n-NfB" id="yF8-y6-AS8"/>
+                <outlet property="minusButton" destination="ZZu-Di-5vM" id="ykh-B0-bcV"/>
+                <outlet property="plusButton" destination="fUg-ro-SiB" id="GdX-J2-vJB"/>
             </connections>
             <point key="canvasLocation" x="295.6521739130435" y="45.200892857142854"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
