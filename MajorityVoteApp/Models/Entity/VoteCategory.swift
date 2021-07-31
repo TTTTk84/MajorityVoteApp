@@ -19,5 +19,15 @@ class VoteCategory: Object {
         self.name = name
     }
     
+    func itemCount() -> [Int] {
+        print("items: \(items)")
+        let listItems = Array(items)
+        var items: [Int] = []
+
+        for item in listItems {
+            items.append(item.count)
+        }
+        return items
+    }
 }
 
