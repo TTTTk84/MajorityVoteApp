@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5418705E26B5278900544FAB /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418705D26B5278900544FAB /* PieChartView.swift */; };
 		541B59B326A3E6F300724C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B226A3E6F300724C28 /* AppDelegate.swift */; };
 		541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B426A3E6F300724C28 /* SceneDelegate.swift */; };
 		541B59B726A3E6F300724C28 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B59B626A3E6F300724C28 /* IndexViewController.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajorityVoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5418705D26B5278900544FAB /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		541B59AF26A3E6F300724C28 /* MajorityVoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajorityVoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		541B59B226A3E6F300724C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		541B59B426A3E6F300724C28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				54C9B97B26AEEB980010C60C /* Cell */,
+				5418705D26B5278900544FAB /* PieChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				5463D3DF26AD7AFA00950F0F /* VoteItemDataStore.swift in Sources */,
 				5463D3DD26AD7AEC00950F0F /* VoteCategoryDataStore.swift in Sources */,
 				541B59B726A3E6F300724C28 /* IndexViewController.swift in Sources */,
+				5418705E26B5278900544FAB /* PieChartView.swift in Sources */,
 				541B59B326A3E6F300724C28 /* AppDelegate.swift in Sources */,
 				542E4C2526A51FAB00F3DBC7 /* GraphViewController.swift in Sources */,
 				541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */,
