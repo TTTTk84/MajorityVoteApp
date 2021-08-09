@@ -10,10 +10,9 @@ import XLPagerTabStrip
 
 class GraphViewController: UIViewController, IndicatorInfoProvider {
     
-    var itemInfo: IndicatorInfo = "グラフ"
+    var itemInfo: IndicatorInfo = "Graph"
     var model: VoteShowModel!
     var voteCategory: VoteCategory!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

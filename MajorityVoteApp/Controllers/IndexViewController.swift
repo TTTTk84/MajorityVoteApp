@@ -18,7 +18,9 @@ class IndexViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "多数決一覧"
+        setupNavigationBar()
+        
+        tableView.backgroundColor = .indexViewColor
         
         model = VoteIndexModel(dataStore: VoteCategoryDataStore(), view: self)
         tableDataList = model.voteCategories
@@ -28,8 +30,21 @@ class IndexViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         
+        
+        
+        
     }
     
+    private func setupNavigationBar() {
+        self.navigationItem.title = "Mojority Vote App"
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.font: UIFont(name: "Avenir-Heavy", size: 20)!
+        ]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+    }
     
     
     
@@ -74,6 +89,7 @@ extension IndexViewController: UITableViewDataSource {
         showView.setViewController(counterView: counterView, graphView: graphView)
         
         self.navigationController?.pushViewController(showView, animated: true)
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
@@ -97,31 +113,3 @@ extension IndexViewController: UITableViewDelegate {
 }
 
 
-
-//@IBAction func tempAction(_ sender: Any) {
-//
-//        let category = tableDataList.last!
-//        print(category)
-//        //category.name = "hogehoge"
-//        model.updateVoteCategory(category: category, name: "hogehoge")
-
-//        let category = tableDataList.last!
-//        model.deleteVoteCategory(category: category)
-//model.addVoteCategory(category: VoteCategory(name: "temp category"))
-
-//    let touchCategory = tableDataList.first!
-//
-//    let showView = self.storyboard?.instantiateViewController(withIdentifier: "ShowViewController") as! ShowViewController
-//    let model = VoteShowModel(dataStore: VoteItemDataStore(category: touchCategory), view: showView, voteCategory: touchCategory)
-//
-//    let counterView = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Counter") as! CounterViewController)
-//    let graphView = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Graph") as! GraphViewController)
-//
-//    showView.voteCategory = touchCategory
-//    counterView.model = model
-//    graphView.model = model
-//
-//    showView.setViewController(counterView: counterView, graphView: graphView)
-//
-//    self.navigationController?.pushViewController(showView, animated: true)
-//}

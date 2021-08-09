@@ -10,7 +10,7 @@ import XLPagerTabStrip
 
 class CounterViewController: UIViewController, IndicatorInfoProvider {
     
-    var itemInfo: IndicatorInfo = "カウンター"
+    var itemInfo: IndicatorInfo = "Counter"
     var model: VoteShowModel!
     private var tableDataList: [VoteItem]!
     let cellIdentifier = "ShowCellView"
@@ -22,6 +22,8 @@ class CounterViewController: UIViewController, IndicatorInfoProvider {
         super.viewDidLoad()
         
         tableDataList = model.getVoteItems()
+        
+        tableView.backgroundColor = UIColor(red: 0.61, green: 0.56, blue: 0.74, alpha: 1.00)
         
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         tableView.delegate = self
@@ -52,15 +54,14 @@ extension CounterViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ShowCellView
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         let voteItem = tableDataList[indexPath.section]
-        cell.setValue(voteItem: voteItem,delegate: self)
+        cell.setValue(voteItem: voteItem, delegate: self)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected: \(tableDataList[indexPath.section])")
     }
     
 }
