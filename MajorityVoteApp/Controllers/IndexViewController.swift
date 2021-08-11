@@ -20,7 +20,7 @@ class IndexViewController: UIViewController {
         super.viewDidLoad()
         setupNavigationBar()
         
-        tableView.backgroundColor = .indexViewColor
+        tableView.backgroundColor = .showViewColor
         
         model = VoteIndexModel(dataStore: VoteCategoryDataStore(), view: self)
         tableDataList = model.voteCategories
