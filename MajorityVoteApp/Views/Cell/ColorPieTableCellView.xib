@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColorPieTableCellView" rowHeight="83" id="kPq-zA-R3A" customClass="ColorPieTableCellView" customModule="MajorityVoteApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kPq-zA-R3A" id="JIV-rZ-Xoj">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-zN-9TE">
+                        <rect key="frame" x="10" y="10" width="394" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きのこ派" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rae-MB-A0q">
+                                <rect key="frame" x="60" y="21" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcP-uS-4pd">
+                                <rect key="frame" x="30" y="31.5" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rae-MB-A0q" firstAttribute="leading" secondItem="NcP-uS-4pd" secondAttribute="trailing" constant="30" id="5t2-iV-DGu"/>
+                            <constraint firstItem="NcP-uS-4pd" firstAttribute="leading" secondItem="Cpe-zN-9TE" secondAttribute="leading" constant="30" id="985-ag-dR7"/>
+                            <constraint firstItem="NcP-uS-4pd" firstAttribute="centerY" secondItem="Cpe-zN-9TE" secondAttribute="centerY" id="RnM-hR-78X"/>
+                            <constraint firstItem="rae-MB-A0q" firstAttribute="centerY" secondItem="Cpe-zN-9TE" secondAttribute="centerY" id="tmW-KB-HMi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Cpe-zN-9TE" secondAttribute="bottom" constant="10" id="AwW-iz-6Nk"/>
+                    <constraint firstAttribute="trailing" secondItem="Cpe-zN-9TE" secondAttribute="trailing" constant="10" id="MGb-Pz-ATD"/>
+                    <constraint firstItem="Cpe-zN-9TE" firstAttribute="top" secondItem="JIV-rZ-Xoj" secondAttribute="top" constant="10" id="oHO-At-hMU"/>
+                    <constraint firstItem="Cpe-zN-9TE" firstAttribute="leading" secondItem="JIV-rZ-Xoj" secondAttribute="leading" constant="10" id="rwD-SS-Pol"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellView" destination="Cpe-zN-9TE" id="P5T-m0-Otv"/>
+                <outlet property="colorLabel" destination="NcP-uS-4pd" id="9gb-Ms-oIV"/>
+                <outlet property="nameLabel" destination="rae-MB-A0q" id="lZd-KN-yuG"/>
+            </connections>
+            <point key="canvasLocation" x="-142.02898550724638" y="52.566964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

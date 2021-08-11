@@ -16,8 +16,17 @@ class ShowViewController: ButtonBarPagerTabStripViewController {
     var voteCategory: VoteCategory!
     
     override func viewDidLoad() {
+        setupXLPagerTabStrip()
         super.viewDidLoad()
+        containerView.isScrollEnabled = false
+        self.view.backgroundColor = .showViewColor
         self.navigationItem.title = voteCategory.name
+    }
+    
+    func setupXLPagerTabStrip() {
+        settings.style.buttonBarBackgroundColor = UIColor.showViewColor
+        settings.style.buttonBarItemBackgroundColor = UIColor.showViewColor
+        settings.style.selectedBarBackgroundColor = UIColor.white
     }
     
     func setViewController(counterView: CounterViewController,

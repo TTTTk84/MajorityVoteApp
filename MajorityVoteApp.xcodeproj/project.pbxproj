@@ -25,10 +25,15 @@
 		542E4C2D26A7177F00F3DBC7 /* VoteShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E4C2C26A7177F00F3DBC7 /* VoteShowModel.swift */; };
 		5463D3DD26AD7AEC00950F0F /* VoteCategoryDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463D3DC26AD7AEC00950F0F /* VoteCategoryDataStore.swift */; };
 		5463D3DF26AD7AFA00950F0F /* VoteItemDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463D3DE26AD7AFA00950F0F /* VoteItemDataStore.swift */; };
+		54C732CD26C126F600BAE181 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C732CC26C126F600BAE181 /* UIColor-Extension.swift */; };
+		54C7330B26C26E7800BAE181 /* ColorPieTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7330A26C26E7800BAE181 /* ColorPieTableView.swift */; };
+		54C7330D26C2721D00BAE181 /* ColorPieTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7330C26C2721D00BAE181 /* ColorPieTableCellView.swift */; };
+		54C7330F26C2722900BAE181 /* ColorPieTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C7330E26C2722900BAE181 /* ColorPieTableCellView.xib */; };
 		54C9B97D26AEEC390010C60C /* IndexCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C9B97C26AEEC390010C60C /* IndexCellView.xib */; };
 		54C9B97F26AEEC660010C60C /* IndexCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B97E26AEEC660010C60C /* IndexCellView.swift */; };
 		54C9B98126AEF6D30010C60C /* ShowCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C9B98026AEF6D30010C60C /* ShowCellView.xib */; };
 		54C9B98326AEF6E70010C60C /* ShowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B98226AEF6E70010C60C /* ShowCellView.swift */; };
+		54D00B2426C3AE9400BBA07C /* AddItemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */; };
 		54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E4F26AA54FF0012B853 /* DataConnection.swift */; };
 		80402CD3D2C1DC1B92D43663 /* Pods_MajorityVoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */; };
 /* End PBXBuildFile section */
@@ -76,10 +81,15 @@
 		542E4C2C26A7177F00F3DBC7 /* VoteShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteShowModel.swift; sourceTree = "<group>"; };
 		5463D3DC26AD7AEC00950F0F /* VoteCategoryDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCategoryDataStore.swift; sourceTree = "<group>"; };
 		5463D3DE26AD7AFA00950F0F /* VoteItemDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteItemDataStore.swift; sourceTree = "<group>"; };
+		54C732CC26C126F600BAE181 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		54C7330A26C26E7800BAE181 /* ColorPieTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPieTableView.swift; sourceTree = "<group>"; };
+		54C7330C26C2721D00BAE181 /* ColorPieTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPieTableCellView.swift; sourceTree = "<group>"; };
+		54C7330E26C2722900BAE181 /* ColorPieTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPieTableCellView.xib; sourceTree = "<group>"; };
 		54C9B97C26AEEC390010C60C /* IndexCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexCellView.xib; sourceTree = "<group>"; };
 		54C9B97E26AEEC660010C60C /* IndexCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCellView.swift; sourceTree = "<group>"; };
 		54C9B98026AEF6D30010C60C /* ShowCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCellView.xib; sourceTree = "<group>"; };
 		54C9B98226AEF6E70010C60C /* ShowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCellView.swift; sourceTree = "<group>"; };
+		54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemAlert.swift; sourceTree = "<group>"; };
 		54E93E4F26AA54FF0012B853 /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
 		778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.debug.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.release.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 		541B59B126A3E6F300724C28 /* MajorityVoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				54C732CB26C1263C00BAE181 /* Extensions */,
 				541B59E426A3F45900724C28 /* Models */,
 				541B59E226A3F43500724C28 /* Views */,
 				541B59E326A3F44100724C28 /* Controllers */,
@@ -172,6 +183,8 @@
 			children = (
 				54C9B97B26AEEB980010C60C /* Cell */,
 				5418705D26B5278900544FAB /* PieChartView.swift */,
+				54C7330A26C26E7800BAE181 /* ColorPieTableView.swift */,
+				54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +238,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		54C732CB26C1263C00BAE181 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54C732CC26C126F600BAE181 /* UIColor-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		54C9B97B26AEEB980010C60C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +253,8 @@
 				54C9B97E26AEEC660010C60C /* IndexCellView.swift */,
 				54C9B98026AEF6D30010C60C /* ShowCellView.xib */,
 				54C9B98226AEF6E70010C60C /* ShowCellView.swift */,
+				54C7330C26C2721D00BAE181 /* ColorPieTableCellView.swift */,
+				54C7330E26C2722900BAE181 /* ColorPieTableCellView.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -358,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C7330F26C2722900BAE181 /* ColorPieTableCellView.xib in Resources */,
 				541B59BF26A3E6F600724C28 /* LaunchScreen.storyboard in Resources */,
 				541B59BC26A3E6F600724C28 /* Assets.xcassets in Resources */,
 				54C9B97D26AEEC390010C60C /* IndexCellView.xib in Resources */,
@@ -430,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C9B98326AEF6E70010C60C /* ShowCellView.swift in Sources */,
+				54D00B2426C3AE9400BBA07C /* AddItemAlert.swift in Sources */,
 				542E4C2D26A7177F00F3DBC7 /* VoteShowModel.swift in Sources */,
 				54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */,
 				542E4C2726A70FEF00F3DBC7 /* VoteCategory.swift in Sources */,
@@ -443,8 +468,11 @@
 				541B59B526A3E6F300724C28 /* SceneDelegate.swift in Sources */,
 				542E4C2926A70FFD00F3DBC7 /* VoteItem.swift in Sources */,
 				541B59E626A3F58A00724C28 /* ShowViewController.swift in Sources */,
+				54C732CD26C126F600BAE181 /* UIColor-Extension.swift in Sources */,
+				54C7330B26C26E7800BAE181 /* ColorPieTableView.swift in Sources */,
 				54C9B97F26AEEC660010C60C /* IndexCellView.swift in Sources */,
 				542E4C2B26A7176B00F3DBC7 /* VoteIndexModel.swift in Sources */,
+				54C7330D26C2721D00BAE181 /* ColorPieTableCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

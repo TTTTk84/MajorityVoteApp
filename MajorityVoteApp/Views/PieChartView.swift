@@ -14,8 +14,9 @@ class PieChartView: UIView {
     var currentIndex = 0
     var startAngle: CGFloat!
     var endAngle: CGFloat!
-    let colorsList = [UIColor.red.cgColor,UIColor.blue.cgColor,UIColor.green.cgColor,UIColor.yellow.cgColor,UIColor.black.cgColor,UIColor.red.cgColor,UIColor.blue.cgColor,UIColor.green.cgColor,UIColor.yellow.cgColor,UIColor.black.cgColor]
+
     var duration: Double!
+    let pieColors = UIColor.getPieCGColors()
     
     func drawChart(items: [Int]){
         drawBaseChart()
@@ -29,6 +30,7 @@ class PieChartView: UIView {
     }
     
     private func drawBaseChart(){
+        
         let shapeFrame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         caShapeLayerForBase.frame = shapeFrame
         caShapeLayerForBase.strokeColor = UIColor(displayP3Red: 1, green: 0.8, blue: 0.4, alpha: 1.0).cgColor
@@ -54,7 +56,7 @@ class PieChartView: UIView {
         
         let shapeFrame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         caShapeLayerForValue.frame = shapeFrame
-        caShapeLayerForValue.strokeColor = colorsList[currentIndex]
+        caShapeLayerForValue.strokeColor = pieColors[currentIndex]
         caShapeLayerForValue.fillColor = UIColor.clear.cgColor
         caShapeLayerForValue.lineWidth = 50
         caShapeLayerForValue.path = UIBezierPath.init(
@@ -85,7 +87,6 @@ class PieChartView: UIView {
             let percent = Double(Double(item) / sumItem * 100.0)
             percents.append(percent)
         }
-        print(percents)
         return percents
     }
     
@@ -108,7 +109,6 @@ extension PieChartView: CAAnimationDelegate {
         }
         
         
-        print("nextChartStart")
         startAngle = endAngle
         endAngle = calucEndAngle(startAngle: startAngle, rate: rateList[currentIndex])
         drawValueChart(startAngle: startAngle, endAngle: endAngle)
