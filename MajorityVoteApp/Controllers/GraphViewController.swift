@@ -59,7 +59,6 @@ class GraphViewController: UIViewController, IndicatorInfoProvider {
     
     
     func reloadView(voteCategory: VoteCategory) {
-        print("update GraphView")
         self.voteCategory = voteCategory
         self.tableDataList = Array(voteCategory.items)
     }

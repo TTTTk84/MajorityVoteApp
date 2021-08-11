@@ -87,7 +87,6 @@ class PieChartView: UIView {
             let percent = Double(Double(item) / sumItem * 100.0)
             percents.append(percent)
         }
-        print(percents)
         return percents
     }
     
@@ -110,7 +109,6 @@ extension PieChartView: CAAnimationDelegate {
         }
         
         
-        print("nextChartStart")
         startAngle = endAngle
         endAngle = calucEndAngle(startAngle: startAngle, rate: rateList[currentIndex])
         drawValueChart(startAngle: startAngle, endAngle: endAngle)

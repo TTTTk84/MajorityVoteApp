@@ -18,6 +18,7 @@ class ShowViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         setupXLPagerTabStrip()
         super.viewDidLoad()
+        containerView.isScrollEnabled = false
         self.view.backgroundColor = .showViewColor
         self.navigationItem.title = voteCategory.name
     }

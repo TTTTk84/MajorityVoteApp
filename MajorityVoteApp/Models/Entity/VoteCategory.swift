@@ -20,7 +20,6 @@ class VoteCategory: Object {
     }
     
     func itemCount() -> [Int] {
-        print("items: \(items)")
         let listItems = Array(items)
         var items: [Int] = []
 

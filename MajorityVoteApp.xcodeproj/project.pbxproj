@@ -33,6 +33,7 @@
 		54C9B97F26AEEC660010C60C /* IndexCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B97E26AEEC660010C60C /* IndexCellView.swift */; };
 		54C9B98126AEF6D30010C60C /* ShowCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C9B98026AEF6D30010C60C /* ShowCellView.xib */; };
 		54C9B98326AEF6E70010C60C /* ShowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B98226AEF6E70010C60C /* ShowCellView.swift */; };
+		54D00B2426C3AE9400BBA07C /* AddItemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */; };
 		54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E4F26AA54FF0012B853 /* DataConnection.swift */; };
 		80402CD3D2C1DC1B92D43663 /* Pods_MajorityVoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DF9FD5327B1B654E01B85 /* Pods_MajorityVoteApp.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		54C9B97E26AEEC660010C60C /* IndexCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCellView.swift; sourceTree = "<group>"; };
 		54C9B98026AEF6D30010C60C /* ShowCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCellView.xib; sourceTree = "<group>"; };
 		54C9B98226AEF6E70010C60C /* ShowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCellView.swift; sourceTree = "<group>"; };
+		54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemAlert.swift; sourceTree = "<group>"; };
 		54E93E4F26AA54FF0012B853 /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
 		778D413B3096B8B9D7BEE0B2 /* Pods-MajorityVoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.debug.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D556A3E48FB37A3D46181A9D /* Pods-MajorityVoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajorityVoteApp.release.xcconfig"; path = "Target Support Files/Pods-MajorityVoteApp/Pods-MajorityVoteApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				54C9B97B26AEEB980010C60C /* Cell */,
 				5418705D26B5278900544FAB /* PieChartView.swift */,
 				54C7330A26C26E7800BAE181 /* ColorPieTableView.swift */,
+				54D00B2326C3AE9400BBA07C /* AddItemAlert.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C9B98326AEF6E70010C60C /* ShowCellView.swift in Sources */,
+				54D00B2426C3AE9400BBA07C /* AddItemAlert.swift in Sources */,
 				542E4C2D26A7177F00F3DBC7 /* VoteShowModel.swift in Sources */,
 				54E93E5026AA54FF0012B853 /* DataConnection.swift in Sources */,
 				542E4C2726A70FEF00F3DBC7 /* VoteCategory.swift in Sources */,

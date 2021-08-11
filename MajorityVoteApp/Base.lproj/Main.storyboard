@@ -59,16 +59,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="StO-Fp-k8k">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="StO-Fp-k8k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4K-Ha-fmV">
+                                <rect key="frame" x="334" y="782" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="EIi-kp-tg8"/>
+                                    <constraint firstAttribute="height" constant="60" id="WXX-gF-Joy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedAddItemButton:" destination="UMp-p0-kCD" eventType="touchUpInside" id="VHf-Bu-Wfc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XYm-fK-qv9"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="XYm-fK-qv9" firstAttribute="trailing" secondItem="U4K-Ha-fmV" secondAttribute="trailing" constant="20" id="DJK-dP-Pf2"/>
+                            <constraint firstItem="StO-Fp-k8k" firstAttribute="top" secondItem="rqq-OA-Hmh" secondAttribute="top" id="KIL-At-hdO"/>
+                            <constraint firstItem="StO-Fp-k8k" firstAttribute="centerX" secondItem="rqq-OA-Hmh" secondAttribute="centerX" id="pNG-KF-oss"/>
+                            <constraint firstItem="XYm-fK-qv9" firstAttribute="bottom" secondItem="U4K-Ha-fmV" secondAttribute="bottom" constant="20" id="qZD-uv-xEX"/>
+                            <constraint firstItem="StO-Fp-k8k" firstAttribute="leading" secondItem="rqq-OA-Hmh" secondAttribute="leading" id="ulk-Kn-RWv"/>
+                            <constraint firstItem="XYm-fK-qv9" firstAttribute="bottom" secondItem="StO-Fp-k8k" secondAttribute="bottom" constant="100" id="yJC-Ry-0hO"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="addItemButton" destination="U4K-Ha-fmV" id="Qer-vR-uLz"/>
                         <outlet property="tableView" destination="StO-Fp-k8k" id="RuQ-Sh-ZeA"/>
                     </connections>
                 </viewController>
@@ -149,6 +172,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

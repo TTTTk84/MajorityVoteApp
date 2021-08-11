@@ -50,7 +50,6 @@ class IndexViewController: UIViewController {
     
     func reloadTableView(categories: [VoteCategory]) {
         tableDataList = categories
-        print("reload view")
     }
 }
 
