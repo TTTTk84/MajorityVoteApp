@@ -21,9 +21,6 @@
       <img width="344" alt="majority3" src="https://user-images.githubusercontent.com/51759221/129188174-e9258f9a-7f26-4364-bdc1-7b8dfc9d6b37.png">
     </td>
   </tr>
-  <tr>
-    <td></td>
-  </tr>
 </table>
 
 
